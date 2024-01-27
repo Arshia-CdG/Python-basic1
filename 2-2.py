@@ -1,4 +1,5 @@
 import math
+
 def sum2():
     s = 0
     while(True):
@@ -7,6 +8,7 @@ def sum2():
             break
         s += int(n)
     print(s)
+
 def average2():
     s = 0
     s1 = 0
@@ -17,6 +19,7 @@ def average2():
         s1 += 1
         s += int(n)
     print(round((s / s1), 2))
+
 def max2():
     s1 = int(input())
     while (True):
@@ -25,6 +28,7 @@ def max2():
             break
         s1 = max(s1, int(n))
     print(s1)
+
 def min2():
     s1 = int(input())
     while (True):
@@ -33,8 +37,10 @@ def min2():
             break
         s1 = min(s1, int(n))
     print(s1)
+
 def lcme(a, b):
     return (a * b) // math.gcd(a, b)
+
 def lcd2():
     x = int(input())
     while(True):
@@ -43,6 +49,7 @@ def lcd2():
             break
         x = lcme(x, int(n))
     print(x)
+
 def gcd2():
     x = int(input())
     while(True):
@@ -51,6 +58,7 @@ def gcd2():
             break
         x = math.gcd(x, int(n))
     print(x)
+
 f = input()
 if f == 'sum':
     sum2()
