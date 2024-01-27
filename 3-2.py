@@ -1,4 +1,5 @@
 import re
+
 n = int(input())
 m = set()
 for i in range(n):
@@ -7,6 +8,7 @@ for i in range(n):
         h = r"@([A-Za-z0-9.-]+\.[A-Za-z0-9.-]+)"
         s = re.findall(h, d)
         m.add(s[0])
+
 a = sorted(m)
 for i in (a):
     print(i)
