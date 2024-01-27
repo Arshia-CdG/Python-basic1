@@ -1,6 +1,5 @@
 import re
 
-
 # class for creat users in system by other classes
 
 class User:
@@ -19,7 +18,6 @@ class Course:
         self.valency = valency
         self.current_students = set()
 
-
 # ckass for identify the Students in system
 
 class Student(User):
@@ -28,7 +26,6 @@ class Student(User):
         super().__init__(user_id, title, key_word)
         self.courses = set()
 
-
 # ckass for identify the Professors in system
 
 class Professor(User):
@@ -36,7 +33,6 @@ class Professor(User):
     def __init__(self, user_id, title, key_word):
         super().__init__(user_id, title, key_word)
         self.courses_taught = set()
-
 
 # class for runnimg main program and the error which wanted in program
 

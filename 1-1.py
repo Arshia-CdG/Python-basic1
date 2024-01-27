@@ -1,8 +1,8 @@
-x = int(input())
-v = int(input())
-l = bin(x ^ v)[2:]
-d = 0
+first-input = int(input())
+sevond-input = int(input())
+l = bin(first-input ^ sevond-input)[2:]
+changes = 0
 for i in range (len(l)):
     if l[i] == "1":
-        d += 1
-print (d)
+        changes += 1
+print (changes)
