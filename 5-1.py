@@ -74,7 +74,6 @@ class Octopus:
             new_dna += str(j)
         return new_dna
 
-
 def main():
     input_data = input().strip()
     if input_data.startswith("m"):
