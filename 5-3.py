@@ -134,6 +134,7 @@ class Game:
         else:
             print("draw")
 
+
 def main():            
     n = int(input())
     game = Game(n)
