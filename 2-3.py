@@ -4,6 +4,7 @@ def maghss(n):
         if n % i == 0:
             h += i
     return h
+
 def transform(n, c):
     a = []
     d = 0
@@ -13,9 +14,11 @@ def transform(n, c):
     for i in range (len(a)):
         d += int(a[len(a)- i - 1]) * (10 ** (len(a) - i - 1))
     return d
+
 m = 0
 u = 0
 n, c = map(int,input().split( ))
+
 while(n != -1 & c != -1):
     if 2 <= c <= 9:
         n = maghss(n)
