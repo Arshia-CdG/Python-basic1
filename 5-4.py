@@ -1,6 +1,7 @@
 def find_similar_words(n, sentence, word):
     words = sentence.split()
     similar_words = []
+    
     for w in words:
         word1 = word
         w1 = w
@@ -19,6 +20,8 @@ sentence = sentence.replace('.', '')
 sentence = sentence.replace('،', '')
 sentence = sentence.replace(':', '')
 word = input()
+
 result = find_similar_words(n, sentence, word)
+
 for i in range (len(result)):
     print(result[i])
